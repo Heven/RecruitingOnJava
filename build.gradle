@@ -30,6 +30,9 @@ task fullBuild() << {
 			include('applicationContext.ci.xml')
 			rename('applicationContext.ci.xml', 'applicationContext.xml')
 		}
+		project.exec {
+          executable = './install-ruby'
+      	}
 	}
 
 	project.exec {
@@ -41,6 +44,8 @@ task fullBuild() << {
     jettyRun.execute()
 
     project.exec {
-          executable = './install-ruby'
+          workingDir = project.file("acceptance")
+          executable = 'bundle'
+          args = ['exec', 'cucumber']
       }
 }
