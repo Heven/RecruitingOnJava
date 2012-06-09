@@ -14,26 +14,38 @@ public class User {
 
     private String university;
 
+
+    private String phone;
+
+
     private String email;
 
     private String major;
 
-    private String telephone;
+    public String getPhone() {
+        return phone;
+    }
+
+
+
+    public User(String name, String university, String phone, String email, String major) {
+
+        this.name = name;
+        this.university = university;
+        this.phone = phone;
+        this.email = email;
+        this.major = major;
+
+    }
+
 
     public String getName() {
         return name;
     }
 
-    public long getUserId() {
-        return id;
-    }
 
     public String getUniversity() {
         return university;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
 
@@ -61,11 +73,5 @@ public class User {
         this.major = major;
     }
 
-    public String getTelephone() {
-        return telephone;
-    }
 
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
 }
