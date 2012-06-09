@@ -3,7 +3,7 @@ Given /^I am on the submit page$/ do
 end
 
 When /^I submit my information$/ do
-  page.fill_in('name', :with => "wangyan")
+  page.fill_in('name', :with => "branny")
   page.fill_in('university', :with => "xjtu")
 
   page.find(".btn-primary").click
