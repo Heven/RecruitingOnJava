@@ -45,9 +45,7 @@ task fullBuild() << {
       	}
     } else {
 	    project.exec {
-	          workingDir = project.file("acceptance")
-	          executable = 'bundle'
-	          args = ['exec', 'cucumber']
-	      }
+          executable = './runLocalCucumber'
+	    }
     }
 }

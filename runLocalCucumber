@@ -1,0 +1,10 @@
+#!/bin/bash
+bundle
+if [ $? != 0 ]
+then
+    gem install bundler --no-ri --no-rdoc
+fi
+
+bundle install
+cd acceptance
+bundle exec cucumber
