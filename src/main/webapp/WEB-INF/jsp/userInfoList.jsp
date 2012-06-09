@@ -3,12 +3,14 @@
 <% List<User> userlist=(List<User>)session.getAttribute("userlist"); %>
 <html>
 <head>
+<link href="/css/bootstrap-responsive.css"  rel="stylesheet"/>
+<link href="/css/bootstrap.css" rel="stylesheet"/>
 </head>
 <body>
-<table>
-<tr><td width="100px" name="name">name</td><td width="100px" name="university">university</td></tr>
+<table class="table-striped" align="center">
+<tr><th width="100px" name="name">name</th><th width="100px" name="university">university</th><th width="100px" name="email">email</th><th width="100px" name="telephone">telephone</th></tr>
 <% for (User u:userlist){ %>
-<tr id=<%=u.getUserId() %>><td width="100px" name="name"><%=u.getName() %></td><td width="100px" name="university"><%=u.getUniversity() %></td></tr>
+<tr id=<%=u.getUserId() %>><td width="100px" name="name"><%=u.getName() %></td><td width="100px" name="university"><%=u.getUniversity() %></td><td width="100px" name="email"><%=u.getEmail() %></td><td width="100px" name="telephone"><%=u.getTelephone() %></td></tr>
 <% } %>
 </table>
 </body>
