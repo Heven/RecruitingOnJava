@@ -12,7 +12,7 @@
 <table class="zebraStriped table-bordered" align="center">
 <tr><th width="100px" name="name">name</th><th width="100px" name="university">university</th><th width="100px" name="email">email</th><th width="100px" name="telephone">telephone</th></tr>
 <% for (User u:userlist){ %>
-<tr id=<%=u.getUserId() %>><td width="100px" name="name"><%=u.getName() %></td><td width="100px" name="university"><%=u.getUniversity() %></td><td width="100px" name="email"><%=u.getEmail() %></td><td width="100px" name="telephone"><%=u.getTelephone() %></td></tr>
+<tr id=<%=u.getUserId() %>><td width="100px" name="name"><%=u.getName() %></td><td width="100px" name="university"><%=u.getUniversity() %></td><td width="100px" name="email"><%=u.getEmail() %></td><td width="100px" name="telephone"><%=u.getPhone() %></td></tr>
 <% } %>
 </table>
 </body>
