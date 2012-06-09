@@ -1,3 +1,4 @@
+@mechanize
 Feature:  As an admin
           I want to view all the basic information in a list
           So that I can be clear about the candidates.
