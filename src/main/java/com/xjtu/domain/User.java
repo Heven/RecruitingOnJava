@@ -14,6 +14,12 @@ public class User {
 
     private String university;
 
+    private String email;
+
+    private String major;
+
+    private String telephone;
+
     public String getName() {
         return name;
     }
@@ -37,5 +43,29 @@ public class User {
     public User(String name, String university) {
         this.university = university;
         this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
     }
 }

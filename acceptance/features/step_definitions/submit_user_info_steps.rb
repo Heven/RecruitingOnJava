@@ -6,7 +6,7 @@ When /^I submit my information$/ do
   page.fill_in('name', :with => "wangyan")
   page.fill_in('university', :with => "xjtu")
 
-  page.find(".submit").click
+  page.find(".btn-primary").click
 end
 
 Then /^I should see success message$/ do
