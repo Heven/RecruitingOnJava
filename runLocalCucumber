@@ -7,4 +7,4 @@ fi
 
 bundle install
 cd acceptance
-bundle exec cucumber
+bundle exec cucumber -t ~@wip
