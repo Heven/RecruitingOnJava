@@ -41,7 +41,7 @@ task fullBuild() << {
     jettyRun.execute()
 	if(project.hasProperty('ci')) {
 		project.exec {
-          executable = './install-ruby'
+          executable = './runRemoteCucumber'
       	}
     } else {
 	    project.exec {
