@@ -2,8 +2,8 @@ And /^I am on the admin page$/ do
   visit("/admin")
 end
 
-Then /^I click "(.*?)" button$/ do |arg1|
-    page.find_button('get candidates').click
+Then /^I click "(.*?)" button$/ do |button|
+    page.find_button(button).click
 end
 
 And /^I should see basic information list$/ do

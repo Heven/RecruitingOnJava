@@ -10,9 +10,9 @@
 <body>
 <img src="../img/logo.png">
 <table class="zebraStriped table-bordered" align="center">
-<tr><th width="100px" name="name">name</th><th width="100px" name="university">university</th><th width="100px" name="email">email</th><th width="100px" name="telephone">telephone</th></tr>
+<tr><th width="100px" name="name">name</th><th width="100px" name="university">university</th><th width="100px" name="email">email</th><th width="100px" name="major">major</th><th width="100px" name="telephone">telephone</th><th width="100px" name="resume">resume</th></tr>
 <% for (User u:userlist){ %>
-<tr id=<%=u.getUserId() %>><td width="100px" name="name"><%=u.getName() %></td><td width="100px" name="university"><%=u.getUniversity() %></td><td width="100px" name="email"><%=u.getEmail() %></td><td width="100px" name="telephone"><%=u.getPhone() %></td></tr>
+<tr id=<%=u.getUserId() %>><td width="100px" name="name"><%=u.getName() %></td><td width="100px" name="university"><%=u.getUniversity() %></td><td width="100px" name="email"><%=u.getEmail() %></td><td width="100px" name="major"><%=u.getMajor() %></td><td width="100px" name="telephone"><%=u.getPhone() %></td><td width="100px" name="download"><a href="/resumeDown?UserId=<%=u.getUserId() %>">download</a></td></tr>
 <% } %>
 </table>
 </body>
